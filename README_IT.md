@@ -26,9 +26,18 @@ Copia il contenuto di [`KERNEL_MM_v1_IT.md`](KERNEL_MM_v1_IT.md) (italiano) o [`
 
 ### 2. Caricare le Skill
 
-Su [claude.ai](https://claude.ai), vai su **Settings > Profile > Skills** e carica i file `.skill` che vuoi attivare. Ogni file `.skill` e un archivio zip contenente una definizione `SKILL.md`.
+Su [claude.ai](https://claude.ai), vai su **Settings > Profile > Skills** e carica i file `.skill`.
 
-Puoi caricare tutte le 23 skill o selezionare cluster individuali in base alle tue esigenze.
+Per generare i file `.skill` da questa repo, esegui lo script di packaging incluso:
+
+```bash
+chmod +x pack.sh
+./pack.sh it    # Skill italiane → dist/it/
+./pack.sh en    # Skill inglesi → dist/en/
+./pack.sh       # Entrambe le lingue
+```
+
+Poi carica i file `.skill` dalla cartella `dist/`. Puoi caricare tutte le 23 skill o selezionare cluster individuali in base alle tue esigenze.
 
 ### 3. Avviare una Conversazione
 
@@ -131,17 +140,12 @@ nome-skill.skill (zip)
        └── SKILL.md
 ```
 
-Per costruire i file `.skill` dai sorgenti markdown, puoi usare un semplice script di packaging:
+Usa lo script `pack.sh` incluso per generare tutti i file `.skill`:
 
 ```bash
-#!/bin/bash
-# pack.sh — Pacchettizza i file SKILL.md in archivi .skill
-for dir in skills/*/; do
-    name=$(basename "$dir")
-    if [ -f "$dir/SKILL.md" ]; then
-        (cd skills && zip -r "../${name}.skill" "${name}/SKILL.md")
-    fi
-done
+./pack.sh it    # Solo skill italiane → dist/it/
+./pack.sh en    # Solo skill inglesi → dist/en/
+./pack.sh       # Entrambe → dist/
 ```
 
 ---
@@ -156,6 +160,25 @@ Tutti i documenti principali sono disponibili in entrambe le lingue:
 | README | [`README.md`](README.md) | [`README_IT.md`](README_IT.md) |
 
 I file skill stessi usano un vocabolario misto radicato nel framework D-ND (termini latini, italiani e inglesi fanno tutti parte del linguaggio formale).
+
+---
+
+## Vai Oltre — seed.d-nd.com
+
+Queste skill sono **free e open** — usale, forkale, impara.
+
+Se vuoi andare piu a fondo, **[seed.d-nd.com](https://seed.d-nd.com)** e il passo successivo: un wizard guidato che genera un seme cognitivo personalizzato per il tuo AI coder (Claude Code, Cursor, Windsurf, o qualsiasi ambiente di sviluppo AI-assistito).
+
+| Modulo | Free | Pro |
+| ------ | ---- | --- |
+| Questo skills pack | Si | Si |
+| Anamnesis (persistenza del ragionamento) | Si | Si |
+| Safety Guard (prevenzione operazioni pericolose) | Si | Si |
+| Tutti i moduli + aggiornamenti continui | -- | Si |
+| Orchestrazione multi-nodo | -- | Si |
+| Supporto prioritario | -- | Si |
+
+**Filosofia**: smetti di pagare e il sistema non muore — smette di evolversi.
 
 ---
 
