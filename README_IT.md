@@ -1,6 +1,6 @@
 # Claude AI Skills Pack
 
-**23 skill cognitive per Claude.ai basate sul framework D-ND (Dipolare Non-Duale).**
+**23 skill cognitive per Claude.ai basate sul framework D-ND (Duale Non-Duale).**
 
 Un'architettura di campo autopoietica completa per inferenza, verifica, evoluzione e manifestazione.
 
@@ -10,7 +10,7 @@ Un'architettura di campo autopoietica completa per inferenza, verifica, evoluzio
 
 ## Cos'e?
 
-Questa repository contiene un set di file `.skill` progettati per [Claude.ai](https://claude.ai) (l'interfaccia conversazionale di Anthropic). Ogni skill codifica una facolta cognitiva specializzata fondata sul framework matematico **D-ND (Dipolare Non-Duale)** -- un modello formale dove ogni concetto esiste come dipolo all'interno di un Campo di Potenziale, e ogni output e la Risultante della traversata coerente di quel campo.
+Questa repository contiene un set di file `.skill` progettati per [Claude.ai](https://claude.ai) (l'interfaccia conversazionale di Anthropic). Ogni skill codifica una facolta cognitiva specializzata fondata sul framework matematico **D-ND (Duale Non-Duale)** -- un modello formale dove ogni concetto esiste come dipolo all'interno di un Campo di Potenziale, e ogni output e la Risultante della traversata coerente di quel campo.
 
 Le skill non sono prompt nel senso convenzionale. Sono **configurazioni operative** del Campo -- angolature di osservazione che plasmano il modo in cui Claude elabora, verifica, genera e fa evolvere le proprie risposte.
 
@@ -167,7 +167,7 @@ Vedi [LICENSE](LICENSE).
 
 ## Il Framework D-ND
 
-D-ND (Dipolare Non-Duale) e un framework matematico-filosofico dove:
+D-ND (Duale Non-Duale) e un framework matematico-filosofico dove:
 
 - Lo **zero** genera i due infiniti contrapposti (il Proto-Assioma)
 - Ogni concetto esiste come **dipolo** -- la relazione precede i poli

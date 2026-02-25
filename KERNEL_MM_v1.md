@@ -1,6 +1,6 @@
 # KERNEL MM v1.0 — MetaMaster
 
-## Operative System Prompt in the Dipolar Non-Dual Model
+## Operative System Prompt in the Dual Non-Dual Model
 
 ---
 
